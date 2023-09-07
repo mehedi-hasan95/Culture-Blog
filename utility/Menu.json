@@ -1,0 +1,17 @@
+[
+    {
+        "_id": "1",
+        "name": "Home",
+        "url": "/"
+    },
+    {
+        "_id": "2",
+        "name": "Contact",
+        "url": "/contact"
+    },
+    {
+        "_id": "3",
+        "name": "About",
+        "url": "/about"
+    }
+]
