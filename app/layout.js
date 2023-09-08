@@ -15,8 +15,10 @@ export default function RootLayout({ children }) {
         <html lang="en">
             <body className={inter.className}>
                 <ThemeProvider>
-                    <NavMenu />
-                    {children}
+                    <div className="dark:bg-gray-700 dark:text-white">
+                        <NavMenu />
+                        {children}
+                    </div>
                 </ThemeProvider>
             </body>
         </html>

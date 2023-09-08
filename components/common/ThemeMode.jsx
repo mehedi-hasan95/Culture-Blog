@@ -13,15 +13,15 @@ const ThemeMode = () => {
     return (
         <div
             onClick={toggle}
-            className="relative flex gap-2 items-center bg-slate-500 dark:bg-gray-300 rounded-full px-1 py-1 cursor-pointer bg-contain w-11 md:w-auto"
+            className="relative flex gap-2 items-center bg-slate-500 rounded-full px-1 py-1 cursor-pointer bg-contain w-11 md:w-auto"
         >
-            <BsMoonFill className="text-yellow-300" />
+            <BsMoonFill className="text-yellow-500" />
             <div
-                className={`bg-gray-200 dark:bg-gray-500 h-4 w-4 rounded-full absolute ${
+                className={`bg-gray-200 dark:bg-gray-300 h-4 w-4 rounded-full absolute ${
                     mode === "light" ? "left-1" : "right-1"
                 }`}
             ></div>
-            <BsSunFill className="text-yellow-300" />
+            <BsSunFill className="text-yellow-500" />
         </div>
     );
 };
