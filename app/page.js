@@ -1,5 +1,6 @@
 import Categories from "@/components/home/Categories";
 import Featured from "@/components/home/Featured";
+import Posts from "@/components/home/Posts";
 
 export default function Home() {
     return (
@@ -7,6 +8,7 @@ export default function Home() {
             <div className="container mx-auto">
                 <Featured />
                 <Categories />
+                <Posts />
             </div>
         </div>
     );
