@@ -5,6 +5,7 @@ import menus from "@/utility/Menu.json";
 import { useState } from "react";
 import { FaBars } from "react-icons/fa";
 import { MdClose } from "react-icons/md";
+import ThemeMode from "./ThemeMode";
 const NavMenu = () => {
     const [openMenu, setOpenMenu] = useState(false);
     const isOpen = () => {
@@ -23,11 +24,13 @@ const NavMenu = () => {
                         <Link href="/">CultureWeb</Link>
                     </h1>
                     <nav className="md:flex gap-5 md:flex-1 justify-end hidden">
+                        <ThemeMode />
                         {menus.map((menu) => (
                             <Link key={menu._id} href={menu.url}>
                                 {menu.name}
                             </Link>
                         ))}
+                        <Link href="/login">Login</Link>
                     </nav>
                     <button
                         className="md:hidden cursor-pointer"
@@ -37,16 +40,18 @@ const NavMenu = () => {
                     </button>
                 </div>
                 {openMenu && (
-                    <nav className="md:hidden overflow-hidden gap-5 flex flex-col bg-gray-100 dark:bg-gray-800 px-5 transition-all duration-1000 ease-in-out h-screen dark:text-white">
+                    <nav className="md:hidden overflow-hidden py-10 gap-5 flex flex-col bg-gray-100 dark:bg-gray-800 px-5 transition-all duration-1000 ease-in-out h-screen dark:text-white">
+                        <ThemeMode onClick={() => setOpenMenu(false)} />
                         {menus.map((menu) => (
                             <Link
-                                onClick={openMenu(false)}
+                                onClick={() => setOpenMenu(false)}
                                 key={menu._id}
                                 href={menu.url}
                             >
                                 {menu.name}
                             </Link>
                         ))}
+                        <Link href="/login">Login</Link>
                     </nav>
                 )}
             </div>
