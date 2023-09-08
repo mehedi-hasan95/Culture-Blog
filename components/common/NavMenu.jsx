@@ -26,7 +26,11 @@ const NavMenu = () => {
                     <nav className="md:flex gap-5 md:flex-1 justify-end hidden">
                         <ThemeMode />
                         {menus.map((menu) => (
-                            <Link key={menu._id} href={menu.url}>
+                            <Link
+                                key={menu._id}
+                                href={menu.url}
+                                className="capitalize"
+                            >
                                 {menu.name}
                             </Link>
                         ))}

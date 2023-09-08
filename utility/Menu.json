@@ -6,12 +6,17 @@
     },
     {
         "_id": "2",
-        "name": "Contact",
-        "url": "/contact"
+        "name": "blog",
+        "url": "/blog"
     },
     {
         "_id": "3",
         "name": "About",
         "url": "/about"
+    },
+    {
+        "_id": "4",
+        "name": "Contact",
+        "url": "/contact"
     }
 ]

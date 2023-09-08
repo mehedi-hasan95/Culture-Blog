@@ -3,12 +3,12 @@ import Link from "next/link";
 
 const Featured = () => {
     return (
-        <div className="py-16">
+        <div className="py-16 px-4">
             <h1 className="text-3xl md:text-4xl lg:text-5xl max-w-7xl pb-10">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                 Magnam, aliquid?
             </h1>
-            <div className="grid md:grid-cols-2 relative h-[400] w-[400] gap-8 items-center">
+            <div className="grid lg:grid-cols-2 relative h-[400] w-[400] gap-8 items-center">
                 <Image
                     src="https://images.pexels.com/photos/5681675/pexels-photo-5681675.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                     alt="bangladeshi culture"
