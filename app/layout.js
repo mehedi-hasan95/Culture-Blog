@@ -2,6 +2,7 @@ import NavMenu from "@/components/common/NavMenu";
 import "./globals.css";
 import { Inter } from "next/font/google";
 import { ThemeProvider } from "@/context/ThemeContext";
+import Footer from "@/components/common/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,6 +19,7 @@ export default function RootLayout({ children }) {
                     <div className="dark:bg-gray-700 dark:text-white">
                         <NavMenu />
                         {children}
+                        <Footer />
                     </div>
                 </ThemeProvider>
             </body>

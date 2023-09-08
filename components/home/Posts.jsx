@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import Pagination from "./Pagination";
 
 const Posts = () => {
     return (
@@ -101,6 +102,7 @@ const Posts = () => {
                         </Link>
                     </div>
                 </div>
+                <Pagination />
             </div>
             <div className="w-1/3">
                 <div>
